@@ -197,3 +197,4 @@ U.InputBegan:Connect(function(i, g) if isBind and i.UserInputType == Enum.UserIn
 
 _G.XenoToggleGuiConn = U.InputBegan:Connect(function(i, g) if g then return end if i.KeyCode == toggleGuiKey and not U:GetFocusedTextBox() then toggleGui() end end)
 _G.XenoFlyDisconnect = function() if ev then ev:Disconnect() end if ev2 then ev2:Disconnect() end if _G.XenoToggleGuiConn then _G.XenoToggleGuiConn:Disconnect() end end
+
